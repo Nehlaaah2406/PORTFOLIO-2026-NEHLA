@@ -1,20 +1,120 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Hi, I'm Fathima Nehla 👋
 
-# Run and deploy your AI Studio app
+### Frontend Developer • UI/UX Designer • Computer Science Student
 
-This contains everything you need to run your app locally.
+I'm passionate about building modern, responsive, and interactive web experiences that blend thoughtful design with clean, maintainable code. I enjoy transforming ideas into engaging digital products using modern frontend technologies.
 
-View your app in AI Studio: https://ai.studio/apps/0743dc61-f28d-4ccb-a839-87f84fdd9aea
+---
 
-## Run Locally
+## 🌐 Portfolio
 
-**Prerequisites:**  Node.js
+**Website:** https://nehla-portfolio.netlify.app
 
+Explore my projects, skills, and design work.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+## 🚀 About Me
+
+* 🎓 B.Tech Computer Science Student
+* 💻 Frontend Developer
+* 🎨 UI/UX Designer
+* 📱 Responsive Web Design Enthusiast
+* ✨ Passionate about animations and interactive user experiences
+* 🌱 Currently exploring AI-powered web applications and modern frontend technologies
+
+---
+
+## 🛠️ Tech Stack
+
+### Languages
+
+* HTML5
+* CSS3
+* JavaScript
+* TypeScript
+
+### Frontend
+
+* React.js
+* Next.js
+* Vite
+* Tailwind CSS
+* Framer Motion
+* GSAP
+
+### Design
+
+* Figma
+* Adobe Illustrator
+* Canva
+
+### Tools
+
+* Git
+* GitHub
+* VS Code
+* Postman
+
+---
+
+## 🚀 Featured Projects
+
+### 🌍 Trawelong
+
+An immersive travel website with cinematic scroll-based storytelling, luxury-inspired UI, and smooth animations.
+
+### 🎓 SSET Lumina
+
+A faculty research repository platform for organizing and showcasing academic publications.
+
+### 🚍 Busify Kerala
+
+A smart public transportation platform focused on improving the travel experience.
+
+### ⏰ WakeUp Warrior
+
+A productivity alarm application designed to help users build consistent morning habits.
+
+---
+
+## 💼 What I Build
+
+* Responsive Websites
+* Business Websites
+* Portfolio Websites
+* Landing Pages
+* UI/UX Designs
+* Interactive Web Experiences
+* Modern React Applications
+
+---
+
+## 📫 Connect With Me
+
+🌐 **Portfolio**
+https://nehla-portfolio.netlify.app
+
+💼 **LinkedIn**
+https://linkedin.com/in/fathima-nehla
+
+🐙 **GitHub**
+https://github.com/Nehlaaah2406
+
+---
+
+## 🌱 Currently Learning
+
+* Advanced React & Next.js
+* Motion Design
+* UI/UX Design Systems
+* AI Integration in Web Applications
+* Performance Optimization
+
+---
+
+## 💡 Motto
+
+> *"Turning ideas into engaging digital experiences through thoughtful design and clean code."*
+
+⭐ If you like my work, feel free to explore my repositories and connect with me!
