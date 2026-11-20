@@ -166,93 +166,94 @@ export default function ProjectsSection() {
           {/* =======================================================
               CARD 02: Kerala Innovation Festival (Wide Amber-to-Terracotta Gradient)
               ======================================================= */}
-          <motion.div
-            onClick={() => handleCardClick(projects[1])}
-            whileHover={{ y: -6 }}
-            className={`lg:col-span-8 rounded-[2.5rem] p-8 transition-all duration-500 cursor-pointer flex flex-col justify-between min-h-[300px] select-none relative overflow-hidden group ${
-              selectedProj.id === projects[1].id
-                ? "bg-gradient-to-br from-[#E85002] via-[#F16001] to-[#C10801] text-white shadow-[0_20px_50px_rgba(232,80,2,0.35)] ring-4 ring-white scale-[1.01]"
-                : "bg-gradient-to-br from-[#E85002]/90 via-[#F16001]/90 to-[#C10801]/90 text-white hover:shadow-2xl"
-            }`}
-            id="bento-card-kif-website"
-          >
-            {/* Elegant Hover Overlay */}
-            <div className="absolute inset-0 bg-neutral-950/95 flex flex-col items-center justify-center text-center p-6 transition-all duration-300 z-10 opacity-0 group-hover:opacity-100">
-              <ExternalLink size={32} className="text-[#E85002] mb-3 animate-pulse" />
-              <h4 className="font-sans font-black text-lg text-white uppercase tracking-tight">
-                {projects[1].title}
-              </h4>
-              <p className="font-mono text-[9px] tracking-widest text-[#E85002] uppercase font-bold mt-1">
-                {projects[1].subtitle}
-              </p>
-              
-              <div className="flex flex-col gap-2 mt-6 w-full max-w-[180px]">
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    if (projects[1].liveUrl) {
-                      window.open(projects[1].liveUrl, "_blank", "noopener,noreferrer");
-                    }
-                  }}
-                  className="px-4 py-2 bg-[#E85002] hover:bg-white hover:text-black text-white font-mono text-[10px] tracking-wider uppercase font-bold rounded-lg transition-all flex items-center justify-center gap-1.5 shadow-lg cursor-pointer"
-                >
-                  <ExternalLink size={12} />
-                  Launch Demo
-                </button>
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setActiveOverlay(projects[1]);
-                  }}
-                  className="px-4 py-2 bg-white/10 hover:bg-white/20 text-white font-mono text-[10px] tracking-wider uppercase font-bold rounded-lg transition-all flex items-center justify-center gap-1.5 border border-white/10 cursor-pointer"
-                >
-                  <Sparkles size={12} />
-                  Case Study
-                </button>
-              </div>
-            </div>
+          
+<motion.div
+  onClick={() => handleCardClick(projects[1])}
+  whileHover={{ y: -6 }}
+  className={`lg:col-span-8 rounded-[2.5rem] p-8 transition-all duration-500 cursor-pointer flex flex-col justify-between min-h-[300px] select-none relative overflow-hidden group ${
+    selectedProj.id === projects[1].id
+      ? "bg-gradient-to-br from-[#E85002] via-[#F16001] to-[#C10801] text-white shadow-[0_20px_50px_rgba(232,80,2,0.35)] ring-4 ring-white scale-[1.01]"
+      : "bg-gradient-to-br from-[#E85002]/90 via-[#F16001]/90 to-[#C10801]/90 text-white hover:shadow-2xl"
+  }`}
+  id="bento-card-kif-website"
+>
+  {/* Elegant Hover Overlay */}
+  <div className="absolute inset-0 bg-neutral-950/95 flex flex-col items-center justify-center text-center p-6 transition-all duration-300 z-10 opacity-0 group-hover:opacity-100">
+    <ExternalLink size={32} className="text-[#E85002] mb-3 animate-pulse" />
+    <h4 className="font-sans font-black text-lg text-white uppercase tracking-tight">
+      {projects[1].title}
+    </h4>
+    <p className="font-mono text-[9px] tracking-widest text-[#E85002] uppercase font-bold mt-1">
+      {projects[1].subtitle}
+    </p>
 
-            <div className="flex justify-between items-start">
-              <span className="font-sans font-black text-5xl sm:text-6xl text-white block leading-none">
-                02
-              </span>
-              <span className="px-3 py-1 bg-white/10 rounded-full font-mono text-[8px] tracking-widest text-white/90 uppercase">
-                {projects[1].subtitle}
-              </span>
-            </div>
+    <div className="flex flex-col gap-2 mt-6 w-full max-w-[180px]">
+      <button
+        onClick={(e) => {
+          e.stopPropagation();
+          window.open("https://kif-26.vercel.app/", "_blank", "noopener,noreferrer");
+        }}
+        className="px-4 py-2 bg-[#E85002] hover:bg-white hover:text-black text-white font-mono text-[10px] tracking-wider uppercase font-bold rounded-lg transition-all flex items-center justify-center gap-1.5 shadow-lg cursor-pointer"
+      >
+        <ExternalLink size={12} />
+        Launch Demo
+      </button>
 
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mt-8 items-end">
-              <div className="md:col-span-7">
-                <span className="font-mono text-[9px] tracking-widest text-white/75 uppercase font-bold block mb-1">
-                  Event Highlights
-                </span>
-                <h3 className="font-sans font-extrabold text-2xl sm:text-4xl text-white tracking-tight leading-none uppercase">
-                  {projects[1].title}
-                </h3>
-              </div>
-              <div className="md:col-span-5">
-                <p className="font-sans text-xs text-white/90 leading-relaxed font-light">
-                  {projects[1].tagline}
-                </p>
-              </div>
-            </div>
+      <button
+        onClick={(e) => {
+          e.stopPropagation();
+          setActiveOverlay(projects[1]);
+        }}
+        className="px-4 py-2 bg-white/10 hover:bg-white/20 text-white font-mono text-[10px] tracking-wider uppercase font-bold rounded-lg transition-all flex items-center justify-center gap-1.5 border border-white/10 cursor-pointer"
+      >
+        <Sparkles size={12} />
+        Case Study
+      </button>
+    </div>
+  </div>
 
-            {/* Case study trigger */}
-            <div className="flex justify-between items-center mt-6 pt-4 border-t border-white/10">
-              <span className="font-mono text-[9px] text-white/60 uppercase">
-                {selectedProj.id === projects[1].id ? "★ Highlighted" : "Click to select"}
-              </span>
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setActiveOverlay(projects[1]);
-                }}
-                className="px-3.5 py-1.5 bg-white text-[#C10801] font-mono text-[9px] tracking-widest uppercase font-bold rounded-full hover:bg-black hover:text-white transition-all flex items-center gap-1 cursor-pointer"
-              >
-                Case Study
-              </button>
-            </div>
-          </motion.div>
+  <div className="flex justify-between items-start">
+    <span className="font-sans font-black text-5xl sm:text-6xl text-white block leading-none">
+      02
+    </span>
+    <span className="px-3 py-1 bg-white/10 rounded-full font-mono text-[8px] tracking-widest text-white/90 uppercase">
+      {projects[1].subtitle}
+    </span>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mt-8 items-end">
+    <div className="md:col-span-7">
+      <span className="font-mono text-[9px] tracking-widest text-white/75 uppercase font-bold block mb-1">
+        Event Highlights
+      </span>
+      <h3 className="font-sans font-extrabold text-2xl sm:text-4xl text-white tracking-tight leading-none uppercase">
+        {projects[1].title}
+      </h3>
+    </div>
+    <div className="md:col-span-5">
+      <p className="font-sans text-xs text-white/90 leading-relaxed font-light">
+        {projects[1].tagline}
+      </p>
+    </div>
+  </div>
+
+  {/* Case study trigger */}
+  <div className="flex justify-between items-center mt-6 pt-4 border-t border-white/10">
+    <span className="font-mono text-[9px] text-white/60 uppercase">
+      {selectedProj.id === projects[1].id ? "★ Highlighted" : "Click to select"}
+    </span>
+    <button
+      onClick={(e) => {
+        e.stopPropagation();
+        setActiveOverlay(projects[1]);
+      }}
+      className="px-3.5 py-1.5 bg-white text-[#C10801] font-mono text-[9px] tracking-widest uppercase font-bold rounded-full hover:bg-black hover:text-white transition-all flex items-center gap-1 cursor-pointer"
+    >
+      Case Study
+    </button>
+  </div>
+</motion.div>
+
 
           {/* =======================================================
               CARD 03: SSET Lumina (Terracotta-to-Amber Mesh Gradient)
